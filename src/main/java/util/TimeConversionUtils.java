@@ -1,13 +1,13 @@
 package util;
 
-public class TimeConversionUtils {
-    public int intervalToIndex(String interval) {
+public static class TimeConversionUtils {
+    public static int intervalToIndex(String interval) {
         String[] hourAndMinutes = interval.split("\\s*[:\\-]\\s*");
         final int hour = Integer.parseInt(hourAndMinutes[0]);
         final int minutes = Integer.parseInt(hourAndMinutes[1]);
         return hour * 4 + (minutes / 15) + 1;
     }
-    public String indexToInterval(int index){
+    public static String indexToInterval(int index){
         int bruteMinutes = index * 15;
         int secondHour = bruteMinutes / 60;
         int firstHour;
@@ -24,7 +24,7 @@ public class TimeConversionUtils {
         String res = String.format("%02d:%02d - %02d:%02d",firstHour,firstMinutes,secondHour,secondMinutes);
         return res;
     }
-    public int timestampToInterval(String timestamp){
+    public static int timestampToInterval(String timestamp){
         int index = timestamp.indexOf("T") + 1;
         String first = timestamp.substring(index);
         String[] hourAndMinutes = first.split(":");

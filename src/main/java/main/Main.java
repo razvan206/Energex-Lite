@@ -3,12 +3,19 @@ package main;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import command.Command;
+import fileio.CommandInput;
 import fileio.InputLoader;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
-import util.TimeConversionUtils;
+import repository.MemoryRepository;
+import util.SimulationClock;
+
+import static command.TransformCommand.transformCommand;
 
 /**
  * The entry point to this homework. It runs the checker that tests your implementation.
@@ -49,6 +56,22 @@ public final class Main {
          * output.add(objectNode);
          *
          */
+        MemoryRepository repository = new MemoryRepository();
+        SimulationClock clock = new SimulationClock();
+        List<Command> commands = new ArrayList<>();
+
+        for(CommandInput cmd : inputLoader.getCommands()){
+            commands.add(transformCommand(cmd));
+        }
+        // we get the brute information from the input json (CommandInput) but we need to
+        // get the class to Command type that have the method execute for every type(get,import,etc)
+
+        for(Command cmd : commands){
+            cmd.execute(repository, clock, output, MAPPER);
+        }
+        // we put the MAPPER parameter for efficiency to reduce
+        // the MAPPER object that we would've create in
+        // every class to put the json output
 
         File outputFile = new File(outputPath);
         outputFile.getParentFile().mkdirs();
