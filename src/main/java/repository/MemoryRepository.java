@@ -5,9 +5,9 @@ import domain.GridLoadPoint;
 import domain.MarketDocument;
 import domain.MarketPoint;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.*;
 
 public class MemoryRepository implements MarketRepository{
     private Map<DataType, Map<String, MarketDocument>> storage;
@@ -27,16 +27,9 @@ public class MemoryRepository implements MarketRepository{
     @Override
     public void savePoint(DataType type, String date, MarketPoint point) {
         Map<String, MarketDocument> typeDocument = this.storage.get(type);
-        MarketDocument dayDocument = typeDocument.computeIfAbsent(date, d -> {
-            MarketDocument newDocument = new MarketDocument();
-            newDocument.setDataType(type);
-            newDocument.setDate(d);
-            return newDocument;
-        });
+        MarketDocument dayDocument = typeDocument.computeIfAbsent(date, d -> new MarketDocument(type, date));
         // used lambda functions for computeIfAbsent
-
         dayDocument.addOrUpdatePoint(point);
-
     }
 
     @Override
@@ -111,6 +104,28 @@ public class MemoryRepository implements MarketRepository{
             return null;
         }
         return typeDocument.get(date);
+    }
+
+    public Map <String, List<MarketPoint>> getPointsInRange(DataType type, LocalDateTime fromTime, LocalDateTime toTime){
+        Map<String, List<MarketPoint>> result = new TreeMap<>();
+        Map<String, MarketDocument> typeDocument = this.storage.get(type);
+
+        if(typeDocument == null || typeDocument.isEmpty())
+            return result;
+
+        for(Map.Entry<String,MarketDocument> entry : typeDocument.entrySet()){
+            if(!LocalDate.parse(entry.getKey()).isBefore(fromTime.toLocalDate()) && !LocalDate.parse(entry.getKey()).isAfter(toTime.toLocalDate()))
+                for(MarketPoint p : entry.getValue().getPointsAsList()){
+                    LocalDate day = LocalDate.parse(p.getDate());
+                    LocalDateTime start = day.atStartOfDay().plusMinutes((p.getIntervalIndex()-1) * 15);
+                    LocalDateTime end = day.atStartOfDay().plusMinutes((p.getIntervalIndex()) * 15);
+
+                    if(!start.isBefore(fromTime) && !end.isAfter(toTime))
+                        // we add the point in the map of that day
+                        result.computeIfAbsent(entry.getKey(),k -> new ArrayList<>()).add(p);
+                }
+        }
+        return result;
     }
 
 }

@@ -1,5 +1,7 @@
 package domain;
 
+import com.sun.source.tree.Tree;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -50,6 +52,11 @@ public class MarketDocument {
         this.quantityMeasureUnit = quantityMeasureUnit;
         this.currencyUnit = currencyUnit;
         this.points = points;
+    }
+    public MarketDocument(DataType type, String date){
+        this.dataType = type;
+        this.date = date;
+        this.points = new TreeMap<>();
     }
 
     public String getBiddingZoneDomain() {

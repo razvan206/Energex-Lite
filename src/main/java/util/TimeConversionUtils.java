@@ -1,6 +1,11 @@
 package util;
 
-public static class TimeConversionUtils {
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+import java.time.format.ResolverStyle;
+
+public class TimeConversionUtils {
     public static int intervalToIndex(String interval) {
         String[] hourAndMinutes = interval.split("\\s*[:\\-]\\s*");
         final int hour = Integer.parseInt(hourAndMinutes[0]);
@@ -43,5 +48,15 @@ public static class TimeConversionUtils {
         String second = String.format("%02d:%02d",secondHour,secondMinutes);
         String res = first + " - " + second;
         return intervalToIndex(res);
+    }
+    public static boolean isDateValid(String text){
+        try{
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("uuuu-MM-dd'T'HH:mm").withResolverStyle(ResolverStyle.STRICT);
+            LocalDateTime.parse(text, formatter);
+            return true;
+        }
+        catch (DateTimeParseException e){
+            return false;
+        }
     }
 }

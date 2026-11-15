@@ -10,6 +10,7 @@ public class TransformCommand {
            case "import" -> new ImportCommand(input);
            case "patch" -> new PatchCommand(input);
            case "get" -> new GetCommand(input);
-       }
+           default -> throw new IllegalArgumentException("Comandă necunoscută: " + input.getCommand());
+       };
     }
 }

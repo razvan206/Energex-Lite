@@ -17,7 +17,7 @@ public class DamPricePredictionPoint extends MarketPoint{
         if(this.predictedPriceEurMhw == null)
             return "PredictedPriceEurMwh is null; interval skipped.";
         if(this.predictedPriceEurMhw < -500 || this.predictedPriceEurMhw > 4000)
-            return "PredictedPriceEurMwh " + predictedPriceEurMhw + " is outside the market range [-500,4000] EUR/Mwh; interval skipped.";
+            return "PredictedPriceEurMwh " + predictedPriceEurMhw + " is outside the market range [-500,4000] EUR/MWh; interval skipped.";
         if(this.spikeProbability == null)
             return "SpikeProbability is null; interval skipped.";
         if(this.spikeProbability < 0.0 || this.spikeProbability > 1.0)

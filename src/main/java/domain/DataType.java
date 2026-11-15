@@ -7,14 +7,4 @@ public enum DataType {
     GRID_LOAD_PREDICTION,
     IMBALANCE_PRICE,
     IMBALANCE_VOLUME
-
-    private final String description;
-
-    private DataType(String description){
-        this.description=description;
-    }
-
-    public String getDescription(){
-        return description;
-    }
 }

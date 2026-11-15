@@ -15,8 +15,9 @@ public abstract class Command {
     protected Command(CommandInput input){
         this.input = input;
     }
-    public final void time(MemoryRepository memoryRepository, SimulationClock simulationClock){
+    public final void execute(MemoryRepository memoryRepository, SimulationClock simulationClock, ArrayNode output){
         simulationClock.timeSimulation(LocalDateTime.parse(this.input.getTimestamp()), memoryRepository);
+        this.executeCommand(memoryRepository, simulationClock, output);
     }
-    public abstract void execute(MemoryRepository memoryRepository, SimulationClock simulationClock, ArrayNode output, ObjectMapper mapper);
+    public abstract void executeCommand(MemoryRepository memoryRepository, SimulationClock simulationClock, ArrayNode output);
 }

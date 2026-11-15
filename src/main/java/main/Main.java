@@ -25,7 +25,7 @@ public final class Main {
     private Main() {
     }
 
-    private static final ObjectMapper MAPPER = new ObjectMapper();
+    public static final ObjectMapper MAPPER = new ObjectMapper();
     public static final ObjectWriter WRITER = MAPPER.writer().withDefaultPrettyPrinter();
 
     /**
@@ -67,7 +67,7 @@ public final class Main {
         // get the class to Command type that have the method execute for every type(get,import,etc)
 
         for(Command cmd : commands){
-            cmd.execute(repository, clock, output, MAPPER);
+            cmd.execute(repository, clock, output);
         }
         // we put the MAPPER parameter for efficiency to reduce
         // the MAPPER object that we would've create in

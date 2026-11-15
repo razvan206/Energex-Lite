@@ -18,10 +18,6 @@ public class GridLoadPoint extends MarketPoint {
             return "Quantity is null; interval skipped.";
         if (this.quantity < 0)
             return "Quantity " + quantity + " is below the minimum allowed value 0; interval skipped.";
-        if (this.reservesRequiredMW == null)
-            return "ReservesRequiredMW is null; interval skipped.";
-        if (this.reservesRequiredMW <= 0)
-            return "ReservesRequiredMW " + reservesRequiredMW + " is not positive; interval skipped.";
         if (prevQuantity != null && Math.abs(this.quantity - prevQuantity) > 10000.0)
             return "Quantity change exceeds 10000 MW compared with the previous interval; interval skipped.";
         return null;
