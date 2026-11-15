@@ -60,13 +60,11 @@ public final class Main {
         SimulationClock clock = new SimulationClock();
         List<Command> commands = new ArrayList<>();
 
-        for(CommandInput cmd : inputLoader.getCommands()){
+        for (CommandInput cmd : inputLoader.getCommands()) {
             commands.add(transformCommand(cmd));
         }
-        // we get the brute information from the input json (CommandInput) but we need to
-        // get the class to Command type that have the method execute for every type(get,import,etc)
 
-        for(Command cmd : commands){
+        for (Command cmd : commands) {
             cmd.execute(repository, clock, output);
         }
         // we put the MAPPER parameter for efficiency to reduce

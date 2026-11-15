@@ -5,31 +5,45 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.time.format.ResolverStyle;
 
-public class TimeConversionUtils {
-    public static int intervalToIndex(String interval) {
+public final class TimeConversionUtils {
+    private static final int MINUTES_PER_QUARTER = 15;
+    private static final int QUARTERS_PER_HOUR = 4;
+    private static final int MINUTES_PER_HOUR = 60;
+    private static final int LAST_QUARTER_MINUTES = 45;
+    private static final int HOURS_PER_DAY = 24;
+
+    public TimeConversionUtils() {
+    }
+
+    public static int intervalToIndex(final String interval) {
         String[] hourAndMinutes = interval.split("\\s*[:\\-]\\s*");
         final int hour = Integer.parseInt(hourAndMinutes[0]);
         final int minutes = Integer.parseInt(hourAndMinutes[1]);
-        return hour * 4 + (minutes / 15) + 1;
+        return hour * QUARTERS_PER_HOUR + (minutes / MINUTES_PER_QUARTER) + 1;
     }
-    public static String indexToInterval(int index){
-        int bruteMinutes = index * 15;
-        int secondHour = bruteMinutes / 60;
+
+    public static String indexToInterval(final int index) {
+        int bruteMinutes = index * MINUTES_PER_QUARTER;
+        int secondHour = bruteMinutes / MINUTES_PER_HOUR;
         int firstHour;
         int firstMinutes;
-        int secondMinutes = (int)((bruteMinutes / 60.0 - secondHour) * 60);
-        if (secondMinutes == 0){
+        int secondMinutes = (int) (((double) bruteMinutes / MINUTES_PER_HOUR
+                - secondHour) * MINUTES_PER_HOUR);
+        if (secondMinutes == 0) {
             firstHour = secondHour - 1;
-            firstMinutes = 45;
-        }
-        else{
+            firstMinutes = LAST_QUARTER_MINUTES;
+        } else {
             firstHour = secondHour;
-            firstMinutes = secondMinutes - 15;
+            firstMinutes = secondMinutes - MINUTES_PER_QUARTER;
         }
-        String res = String.format("%02d:%02d - %02d:%02d",firstHour,firstMinutes,secondHour,secondMinutes);
-        return res;
+        if (secondHour == HOURS_PER_DAY) {
+            secondHour = 0;
+        }
+        return String.format("%02d:%02d - %02d:%02d",
+                firstHour, firstMinutes, secondHour, secondMinutes);
     }
-    public static int timestampToInterval(String timestamp){
+
+    public static int timestampToInterval(final String timestamp) {
         int index = timestamp.indexOf("T") + 1;
         String first = timestamp.substring(index);
         String[] hourAndMinutes = first.split(":");
@@ -37,25 +51,26 @@ public class TimeConversionUtils {
         int firstMinutes = Integer.parseInt(hourAndMinutes[1]);
         int secondHour;
         int secondMinutes;
-        if(firstMinutes != 45){
+        if (firstMinutes != LAST_QUARTER_MINUTES) {
             secondHour = firstHour;
-            secondMinutes = firstMinutes + 15;
-        }
-        else{
+            secondMinutes = firstMinutes + MINUTES_PER_QUARTER;
+        } else {
             secondHour = firstHour + 1;
             secondMinutes = 0;
         }
-        String second = String.format("%02d:%02d",secondHour,secondMinutes);
+        String second = String.format("%02d:%02d", secondHour, secondMinutes);
         String res = first + " - " + second;
         return intervalToIndex(res);
     }
-    public static boolean isDateValid(String text){
-        try{
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("uuuu-MM-dd'T'HH:mm").withResolverStyle(ResolverStyle.STRICT);
+
+    public static boolean isDateValid(final String text) {
+        try {
+            DateTimeFormatter formatter = DateTimeFormatter
+                    .ofPattern("uuuu-MM-dd'T'HH:mm")
+                    .withResolverStyle(ResolverStyle.STRICT);
             LocalDateTime.parse(text, formatter);
             return true;
-        }
-        catch (DateTimeParseException e){
+        } catch (DateTimeParseException e) {
             return false;
         }
     }

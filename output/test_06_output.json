@@ -1,9 +1,9 @@
 [ {
   "command" : "get",
   "timestamp" : "2025-02-13T00:15",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T00:00",
   "to" : "2025-02-13T00:15",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-02-13",
@@ -25,9 +25,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T00:45",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T00:30",
   "to" : "2025-02-13T00:45",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-02-13",
@@ -40,9 +40,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T01:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T00:00",
   "to" : "2025-02-13T01:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-02-13",
@@ -59,30 +59,30 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T01:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T00:00",
   "to" : "2025-02-13T01:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "00:00 - 00:15",
       "intervalIndex" : 1,
-      "predictedPriceEurMhw" : 93.3,
+      "predictedPriceEurMwh" : 93.3,
       "spikeProbability" : 0.18
     }, {
       "interval" : "00:30 - 00:45",
       "intervalIndex" : 3,
-      "predictedPriceEurMhw" : 95.9,
+      "predictedPriceEurMwh" : 95.9,
       "spikeProbability" : 0.34
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T01:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T00:00",
   "to" : "2025-02-13T01:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-02-13",
@@ -104,9 +104,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T01:15",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T01:00",
   "to" : "2025-02-13T01:15",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-02-13",
@@ -119,25 +119,25 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T01:15",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T01:00",
   "to" : "2025-02-13T01:15",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "01:00 - 01:15",
       "intervalIndex" : 5,
-      "predictedPriceEurMhw" : -500.0,
+      "predictedPriceEurMwh" : -500.0,
       "spikeProbability" : 0.0
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T01:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T00:30",
   "to" : "2025-02-13T01:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-02-13",
@@ -154,21 +154,21 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T01:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T00:30",
   "to" : "2025-02-13T01:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "00:30 - 00:45",
       "intervalIndex" : 3,
-      "predictedPriceEurMhw" : 95.9,
+      "predictedPriceEurMwh" : 95.9,
       "spikeProbability" : 0.34
     }, {
       "interval" : "01:00 - 01:15",
       "intervalIndex" : 5,
-      "predictedPriceEurMhw" : -500.0,
+      "predictedPriceEurMwh" : -500.0,
       "spikeProbability" : 0.0
     } ]
   } ]
@@ -192,9 +192,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T01:00",
   "to" : "2025-02-13T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-02-13",
@@ -215,35 +215,35 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T01:00",
   "to" : "2025-02-13T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "01:00 - 01:15",
       "intervalIndex" : 5,
-      "predictedPriceEurMhw" : -500.0,
+      "predictedPriceEurMwh" : -500.0,
       "spikeProbability" : 0.0
     }, {
       "interval" : "01:30 - 01:45",
       "intervalIndex" : 7,
-      "predictedPriceEurMhw" : 101.1,
+      "predictedPriceEurMwh" : 101.1,
       "spikeProbability" : 0.18
     }, {
       "interval" : "01:45 - 02:00",
       "intervalIndex" : 8,
-      "predictedPriceEurMhw" : 102.4,
+      "predictedPriceEurMwh" : 102.4,
       "spikeProbability" : 0.26
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T01:00",
   "to" : "2025-02-13T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-02-13",
@@ -265,9 +265,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T02:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T01:30",
   "to" : "2025-02-13T02:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-02-13",
@@ -288,35 +288,35 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T02:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T01:30",
   "to" : "2025-02-13T02:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "01:30 - 01:45",
       "intervalIndex" : 7,
-      "predictedPriceEurMhw" : 101.1,
+      "predictedPriceEurMwh" : 101.1,
       "spikeProbability" : 0.18
     }, {
       "interval" : "01:45 - 02:00",
       "intervalIndex" : 8,
-      "predictedPriceEurMhw" : 102.4,
+      "predictedPriceEurMwh" : 102.4,
       "spikeProbability" : 0.26
     }, {
       "interval" : "02:00 - 02:15",
       "intervalIndex" : 9,
-      "predictedPriceEurMhw" : 103.7,
+      "predictedPriceEurMwh" : 103.7,
       "spikeProbability" : 0.34
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T02:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T01:30",
   "to" : "2025-02-13T02:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-02-13",
@@ -356,9 +356,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T03:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T02:00",
   "to" : "2025-02-13T03:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-02-13",
@@ -371,30 +371,30 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T03:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T02:00",
   "to" : "2025-02-13T03:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "02:00 - 02:15",
       "intervalIndex" : 9,
-      "predictedPriceEurMhw" : 103.7,
+      "predictedPriceEurMwh" : 103.7,
       "spikeProbability" : 0.34
     }, {
       "interval" : "02:45 - 03:00",
       "intervalIndex" : 12,
-      "predictedPriceEurMhw" : 107.6,
+      "predictedPriceEurMwh" : 107.6,
       "spikeProbability" : 0.1
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T03:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T02:00",
   "to" : "2025-02-13T03:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-02-13",
@@ -428,30 +428,30 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T03:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T02:30",
   "to" : "2025-02-13T03:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "02:45 - 03:00",
       "intervalIndex" : 12,
-      "predictedPriceEurMhw" : 107.6,
+      "predictedPriceEurMwh" : 107.6,
       "spikeProbability" : 0.1
     }, {
       "interval" : "03:00 - 03:15",
       "intervalIndex" : 13,
-      "predictedPriceEurMhw" : 108.9,
+      "predictedPriceEurMwh" : 108.9,
       "spikeProbability" : 0.18
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T03:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T02:30",
   "to" : "2025-02-13T03:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-02-13",
@@ -490,46 +490,46 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T03:45",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T03:30",
   "to" : "2025-02-13T03:45",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "03:30 - 03:45",
       "intervalIndex" : 15,
-      "predictedPriceEurMhw" : 111.5,
+      "predictedPriceEurMwh" : 111.5,
       "spikeProbability" : 0.34
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T04:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T03:00",
   "to" : "2025-02-13T04:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "03:00 - 03:15",
       "intervalIndex" : 13,
-      "predictedPriceEurMhw" : 108.9,
+      "predictedPriceEurMwh" : 108.9,
       "spikeProbability" : 0.18
     }, {
       "interval" : "03:30 - 03:45",
       "intervalIndex" : 15,
-      "predictedPriceEurMhw" : 111.5,
+      "predictedPriceEurMwh" : 111.5,
       "spikeProbability" : 0.34
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T04:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T03:00",
   "to" : "2025-02-13T04:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-02-13",
@@ -547,7 +547,7 @@
   "date" : "2025-02-13",
   "interval" : "04:00 - 04:15",
   "intervalIndex" : 17,
-  "message" : "SpikeProbability -0.25 is outside valid range [0.0,1.0]; interval skipped."
+  "message" : "SpikeProbability -0.25 is outside the valid range [0.0, 1.0]; interval skipped."
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T04:15",
@@ -558,9 +558,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T04:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T03:30",
   "to" : "2025-02-13T04:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-02-13",
@@ -573,25 +573,25 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T04:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T03:30",
   "to" : "2025-02-13T04:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "03:30 - 03:45",
       "intervalIndex" : 15,
-      "predictedPriceEurMhw" : 111.5,
+      "predictedPriceEurMwh" : 111.5,
       "spikeProbability" : 0.34
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T04:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T03:30",
   "to" : "2025-02-13T04:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-02-13",
@@ -609,7 +609,7 @@
   "date" : "2025-02-13",
   "interval" : "04:30 - 04:45",
   "intervalIndex" : 19,
-  "message" : "SpikeProbability 1.65 is outside valid range [0.0,1.0]; interval skipped."
+  "message" : "SpikeProbability 1.65 is outside the valid range [0.0, 1.0]; interval skipped."
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T04:45",
@@ -621,25 +621,25 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T05:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T04:45",
   "to" : "2025-02-13T05:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "04:45 - 05:00",
       "intervalIndex" : 20,
-      "predictedPriceEurMhw" : 4000.0,
+      "predictedPriceEurMwh" : 4000.0,
       "spikeProbability" : 1.0
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T05:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T04:00",
   "to" : "2025-02-13T05:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-02-13",
@@ -660,25 +660,25 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T05:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T04:00",
   "to" : "2025-02-13T05:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "04:45 - 05:00",
       "intervalIndex" : 20,
-      "predictedPriceEurMhw" : 4000.0,
+      "predictedPriceEurMwh" : 4000.0,
       "spikeProbability" : 1.0
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T05:00",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T04:00",
   "to" : "2025-02-13T05:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-02-13",
@@ -717,9 +717,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T05:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T04:30",
   "to" : "2025-02-13T05:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-02-13",
@@ -740,25 +740,25 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T05:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T04:30",
   "to" : "2025-02-13T05:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-02-13",
     "data" : [ {
       "interval" : "04:45 - 05:00",
       "intervalIndex" : 20,
-      "predictedPriceEurMhw" : 4000.0,
+      "predictedPriceEurMwh" : 4000.0,
       "spikeProbability" : 1.0
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-02-13T05:30",
+  "status" : "SUCCESS",
   "from" : "2025-02-13T04:30",
   "to" : "2025-02-13T05:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-02-13",
@@ -798,5 +798,5 @@
   "date" : "2025-02-13",
   "interval" : "06:30 - 06:45",
   "intervalIndex" : 27,
-  "message" : "SpikeProbability 1.0001 is outside valid range [0.0,1.0]; interval skipped."
+  "message" : "SpikeProbability 1.0001 is outside the valid range [0.0, 1.0]; interval skipped."
 } ]

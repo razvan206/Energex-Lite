@@ -1,29 +1,46 @@
 package domain;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import util.TimeConversionUtils;
 
-public class DamPricePoint extends MarketPoint {
-    Double priceAmount;
+public final class DamPricePoint extends MarketPoint {
+    private static final double MIN_PRICE = -500.0;
+    private static final double MAX_PRICE = 4000.0;
 
-    public DamPricePoint(String date, String interval, int intervalIndex, Double priceAmount){
-        super(date,interval,intervalIndex);
+    private Double priceAmount;
+
+    public DamPricePoint(final String date, final String interval,
+                         final int intervalIndex, final Double priceAmount) {
+        super(date, interval, intervalIndex);
+        this.priceAmount = priceAmount;
+    }
+
+    public Double getPriceAmount() {
+        return priceAmount;
+    }
+
+    public void setPriceAmount(final Double priceAmount) {
         this.priceAmount = priceAmount;
     }
 
     @Override
-    public String validate(Double prevQuantity) {
-        if(priceAmount == null)
+    public String validate(final Double prevQuantity) {
+        if (priceAmount == null) {
             return "PriceAmount is null; interval skipped.";
-        if(priceAmount < -500 || priceAmount > 4000)
-            return "PriceAmount " + priceAmount + " is outside the market range [-500, 4000] EUR/MWh; interval skipped.";
+        }
+        if (priceAmount < MIN_PRICE || priceAmount > MAX_PRICE) {
+            return "PriceAmount " + priceAmount
+                    + " is outside the market range [-500, 4000] EUR/MWh;"
+                    + " interval skipped.";
+        }
         return null;
     }
 
     @Override
-    public void fillJsonPoint(ObjectNode node) {
-        node.put("interval", this.interval);
+    public void fillJsonPoint(final ObjectNode node) {
+        node.put("interval",
+                TimeConversionUtils.indexToInterval(this.intervalIndex));
         node.put("intervalIndex", this.intervalIndex);
         node.put("priceAmount", this.priceAmount);
     }
-
 }

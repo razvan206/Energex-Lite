@@ -1,35 +1,67 @@
 package domain;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import util.TimeConversionUtils;
 
-public class GridLoadPredictionPoint extends MarketPoint {
-    Double quantity;
-    Double reservesRequiredMW;
+public final class GridLoadPredictionPoint extends MarketPoint {
+    private static final double MAX_CHANGE = 10000.0;
 
-    public GridLoadPredictionPoint(String date, String interval, int intervalIndex, Double quantity, Double reservesRequiredMW) {
+    private Double quantity;
+    private Double reservesRequiredMW;
+
+    public GridLoadPredictionPoint(final String date, final String interval,
+                                   final int intervalIndex,
+                                   final Double quantity,
+                                   final Double reservesRequiredMW) {
         super(date, interval, intervalIndex);
         this.quantity = quantity;
         this.reservesRequiredMW = reservesRequiredMW;
     }
 
+    public Double getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(final Double quantity) {
+        this.quantity = quantity;
+    }
+
+    public Double getReservesRequiredMW() {
+        return reservesRequiredMW;
+    }
+
+    public void setReservesRequiredMW(final Double reservesRequiredMW) {
+        this.reservesRequiredMW = reservesRequiredMW;
+    }
+
     @Override
-    public String validate(Double prevQuantity) {
-        if (this.quantity == null)
+    public String validate(final Double prevQuantity) {
+        if (this.quantity == null) {
             return "Quantity is null; interval skipped.";
-        if (this.quantity < 0)
-            return "Quantity " + quantity + " is below the minimum allowed value 0; interval skipped.";
-        if (this.reservesRequiredMW == null)
+        }
+        if (this.quantity < 0) {
+            return "Quantity " + quantity
+                    + " is below the minimum allowed value 0; interval skipped.";
+        }
+        if (this.reservesRequiredMW == null) {
             return "ReservesRequiredMW is null; interval skipped.";
-        if (this.reservesRequiredMW <= 0)
-            return "ReservesRequiredMW " + reservesRequiredMW + " is not positive; interval skipped.";
-        if (prevQuantity != null && Math.abs(this.quantity - prevQuantity) > 10000.0)
-            return "Quantity change exceeds 10000 MW compared with the previous interval; interval skipped.";
+        }
+        if (this.reservesRequiredMW <= 0) {
+            return "ReservesRequiredMW " + reservesRequiredMW
+                    + " is not positive; interval skipped.";
+        }
+        if (prevQuantity != null
+                && Math.abs(this.quantity - prevQuantity) > MAX_CHANGE) {
+            return "Quantity change exceeds 10000 MW compared with the previous"
+                    + " interval; interval skipped.";
+        }
         return null;
     }
 
     @Override
-    public void fillJsonPoint(ObjectNode node) {
-        node.put("interval", this.interval);
+    public void fillJsonPoint(final ObjectNode node) {
+        node.put("interval",
+                TimeConversionUtils.indexToInterval(this.intervalIndex));
         node.put("intervalIndex", this.intervalIndex);
         node.put("quantity", this.quantity);
     }

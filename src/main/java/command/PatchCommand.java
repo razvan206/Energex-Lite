@@ -1,55 +1,54 @@
 package command;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import domain.DataType;
 import domain.MarketPoint;
 import domain.MarketPointCreate;
 import fileio.CommandInput;
-import fileio.CommandParametersInput;
 import fileio.MarketDataInput;
 import main.Main;
 import repository.MemoryRepository;
 import util.SimulationClock;
 import util.TimeConversionUtils;
 
-import javax.sound.midi.Patch;
-
-public class PatchCommand extends Command{
-    public PatchCommand(CommandInput input){
+public final class PatchCommand extends Command {
+    public PatchCommand(final CommandInput input) {
         super(input);
     }
 
     @Override
-    public void executeCommand(MemoryRepository memoryRepository, SimulationClock simulationClock, ArrayNode output) {
-        if(this.input.getParameters() == null || this.input.getParameters().getData() == null){
-            return ;
+    public void executeCommand(final MemoryRepository memoryRepository,
+                               final SimulationClock simulationClock,
+                               final ArrayNode output) {
+        if (this.input.getParameters() == null
+                || this.input.getParameters().getData() == null) {
+            return;
         }
-        for(MarketDataInput dataInput : this.input.getParameters().getData()){
+        for (MarketDataInput dataInput : this.input.getParameters().getData()) {
             DataType type = DataType.valueOf(dataInput.id());
             Double prevQuantity = null;
             if (type == DataType.GRID_LOAD) {
-                int currentIndex = TimeConversionUtils.intervalToIndex(dataInput.interval());
-                prevQuantity = memoryRepository.getPreviousGridLoad(dataInput.date(), currentIndex);
+                int currentIndex = TimeConversionUtils.intervalToIndex(
+                        dataInput.interval());
+                prevQuantity = memoryRepository.getPreviousGridLoad(
+                        dataInput.date(), currentIndex);
             }
             MarketPoint point = MarketPointCreate.createPoint(type, dataInput);
             String validation = point.validate(prevQuantity);
-            if(validation != null){
+            if (validation != null) {
                 ObjectNode node = Main.MAPPER.createObjectNode();
-                node.put("command","patch");
-                node.put("timestamp",this.input.getTimestamp());
-                node.put("status","WARNING");
-                node.put("id",dataInput.id());
-                node.put("date",dataInput.date());
-                // i used my method defined in TimeConversionUtils to have the interval formated correctly with spaces
-                // ex : "00:00 - 00:15" not "00:00-00:15"
-                node.put("interval",TimeConversionUtils.indexToInterval(point.getIntervalIndex()));
-                node.put("intervalIndex",point.getIntervalIndex());
-                node.put("message",validation);
+                node.put("command", "patch");
+                node.put("timestamp", this.input.getTimestamp());
+                node.put("status", "WARNING");
+                node.put("id", dataInput.id());
+                node.put("date", dataInput.date());
+                node.put("interval", TimeConversionUtils.indexToInterval(
+                        point.getIntervalIndex()));
+                node.put("intervalIndex", point.getIntervalIndex());
+                node.put("message", validation);
                 output.add(node);
-            }
-            else{
+            } else {
                 memoryRepository.savePoint(type, dataInput.date(), point);
             }
         }

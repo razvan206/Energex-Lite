@@ -1,4 +1,5 @@
 package domain;
+
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 public abstract class MarketPoint {
@@ -6,36 +7,38 @@ public abstract class MarketPoint {
     protected int intervalIndex;
     protected String interval;
 
-    public String getDate() {
+    public final String getDate() {
         return date;
     }
 
-    public int getIntervalIndex(){
+    public final int getIntervalIndex() {
         return intervalIndex;
     }
 
-    public String getInterval() {
+    public final String getInterval() {
         return interval;
     }
 
-    public void setDate(String date) {
+    public final void setDate(final String date) {
         this.date = date;
     }
 
-    public void setInterval(String interval) {
+    public final void setInterval(final String interval) {
         this.interval = interval;
     }
 
-    public void setIntervalIndex(int intervalIndex) {
+    public final void setIntervalIndex(final int intervalIndex) {
         this.intervalIndex = intervalIndex;
     }
 
-    public MarketPoint(String date, String interval, int intervalIndex){
+    public MarketPoint(final String date, final String interval,
+                       final int intervalIndex) {
         this.date = date;
         this.interval = interval;
         this.intervalIndex = intervalIndex;
     }
 
     public abstract String validate(Double prevQuantity);
+
     public abstract void fillJsonPoint(ObjectNode node);
 }

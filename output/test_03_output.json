@@ -1,41 +1,41 @@
 [ {
   "command" : "get",
   "timestamp" : "2026-09-12T03:30",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T03:15",
   "to" : "2026-09-12T03:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2026-09-12",
     "data" : [ {
-      "interval" : "03:15-03:30",
+      "interval" : "03:15 - 03:30",
       "intervalIndex" : 14,
-      "predictedPriceEurMhw" : 256.37,
+      "predictedPriceEurMwh" : 256.37,
       "spikeProbability" : 0.62
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T03:45",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T03:30",
   "to" : "2026-09-12T03:45",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2026-09-12",
     "data" : [ {
-      "interval" : "03:30-03:45",
+      "interval" : "03:30 - 03:45",
       "intervalIndex" : 15,
-      "predictedPriceEurMhw" : -500.0,
+      "predictedPriceEurMwh" : -500.0,
       "spikeProbability" : 0.0
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T03:45",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T03:30",
   "to" : "2026-09-12T03:45",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2026-09-12",
@@ -65,41 +65,41 @@
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T04:45",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T04:30",
   "to" : "2026-09-12T04:45",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2026-09-12",
     "data" : [ {
-      "interval" : "04:30-04:45",
+      "interval" : "04:30 - 04:45",
       "intervalIndex" : 19,
-      "predictedPriceEurMhw" : 256.84,
+      "predictedPriceEurMwh" : 256.84,
       "spikeProbability" : 0.62
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T05:00",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T04:45",
   "to" : "2026-09-12T05:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2026-09-12",
     "data" : [ {
-      "interval" : "04:45-05:00",
+      "interval" : "04:45 - 05:00",
       "intervalIndex" : 20,
-      "predictedPriceEurMhw" : 256.84,
+      "predictedPriceEurMwh" : 256.84,
       "spikeProbability" : 0.62
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T05:00",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T04:45",
   "to" : "2026-09-12T05:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2026-09-12",
@@ -112,25 +112,25 @@
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T05:15",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T05:00",
   "to" : "2026-09-12T05:15",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2026-09-12",
     "data" : [ {
-      "interval" : "05:00-05:15",
+      "interval" : "05:00 - 05:15",
       "intervalIndex" : 21,
-      "predictedPriceEurMhw" : 259.1,
+      "predictedPriceEurMwh" : 259.1,
       "spikeProbability" : 0.61
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T05:45",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T05:30",
   "to" : "2026-09-12T05:45",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2026-09-12",
@@ -143,67 +143,67 @@
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T05:45",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T05:30",
   "to" : "2026-09-12T05:45",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2026-09-12",
     "data" : [ {
-      "interval" : "05:30-05:45",
+      "interval" : "05:30 - 05:45",
       "intervalIndex" : 23,
-      "predictedPriceEurMhw" : 259.1,
+      "predictedPriceEurMwh" : 259.1,
       "spikeProbability" : 0.61
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T06:00",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T04:00",
   "to" : "2026-09-12T06:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2026-09-12",
     "data" : [ {
-      "interval" : "04:00-04:15",
+      "interval" : "04:00 - 04:15",
       "intervalIndex" : 17,
-      "predictedPriceEurMhw" : 256.84,
+      "predictedPriceEurMwh" : 256.84,
       "spikeProbability" : 0.62
     }, {
-      "interval" : "04:15-04:30",
+      "interval" : "04:15 - 04:30",
       "intervalIndex" : 18,
-      "predictedPriceEurMhw" : 256.84,
+      "predictedPriceEurMwh" : 256.84,
       "spikeProbability" : 0.62
     }, {
-      "interval" : "04:30-04:45",
+      "interval" : "04:30 - 04:45",
       "intervalIndex" : 19,
-      "predictedPriceEurMhw" : 256.84,
+      "predictedPriceEurMwh" : 256.84,
       "spikeProbability" : 0.62
     }, {
-      "interval" : "04:45-05:00",
+      "interval" : "04:45 - 05:00",
       "intervalIndex" : 20,
-      "predictedPriceEurMhw" : 256.84,
+      "predictedPriceEurMwh" : 256.84,
       "spikeProbability" : 0.62
     }, {
-      "interval" : "05:00-05:15",
+      "interval" : "05:00 - 05:15",
       "intervalIndex" : 21,
-      "predictedPriceEurMhw" : 259.1,
+      "predictedPriceEurMwh" : 259.1,
       "spikeProbability" : 0.61
     }, {
-      "interval" : "05:15-05:30",
+      "interval" : "05:15 - 05:30",
       "intervalIndex" : 22,
-      "predictedPriceEurMhw" : 259.1,
+      "predictedPriceEurMwh" : 259.1,
       "spikeProbability" : 0.61
     }, {
-      "interval" : "05:30-05:45",
+      "interval" : "05:30 - 05:45",
       "intervalIndex" : 23,
-      "predictedPriceEurMhw" : 259.1,
+      "predictedPriceEurMwh" : 259.1,
       "spikeProbability" : 0.61
     }, {
-      "interval" : "05:45-06:00",
+      "interval" : "05:45 - 06:00",
       "intervalIndex" : 24,
-      "predictedPriceEurMhw" : 259.1,
+      "predictedPriceEurMwh" : 259.1,
       "spikeProbability" : 0.61
     } ]
   } ]
@@ -219,16 +219,16 @@
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T06:45",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T06:30",
   "to" : "2026-09-12T06:45",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2026-09-12",
     "data" : [ {
-      "interval" : "06:30-06:45",
+      "interval" : "06:30 - 06:45",
       "intervalIndex" : 27,
-      "predictedPriceEurMhw" : 4000.0,
+      "predictedPriceEurMwh" : 4000.0,
       "spikeProbability" : 1.0
     } ]
   } ]
@@ -243,25 +243,25 @@
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T07:00",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T06:45",
   "to" : "2026-09-12T07:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2026-09-12",
     "data" : [ {
-      "interval" : "06:45-07:00",
+      "interval" : "06:45 - 07:00",
       "intervalIndex" : 28,
-      "predictedPriceEurMhw" : 260.47,
+      "predictedPriceEurMwh" : 260.47,
       "spikeProbability" : 0.82
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T07:00",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T06:45",
   "to" : "2026-09-12T07:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2026-09-12",
@@ -274,91 +274,91 @@
 }, {
   "command" : "get",
   "timestamp" : "2026-09-12T07:00",
+  "status" : "SUCCESS",
   "from" : "2026-09-12T03:00",
   "to" : "2026-09-12T07:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2026-09-12",
     "data" : [ {
-      "interval" : "03:00-03:15",
+      "interval" : "03:00 - 03:15",
       "intervalIndex" : 13,
-      "predictedPriceEurMhw" : 256.37,
+      "predictedPriceEurMwh" : 256.37,
       "spikeProbability" : 0.62
     }, {
-      "interval" : "03:15-03:30",
+      "interval" : "03:15 - 03:30",
       "intervalIndex" : 14,
-      "predictedPriceEurMhw" : 256.37,
+      "predictedPriceEurMwh" : 256.37,
       "spikeProbability" : 0.62
     }, {
-      "interval" : "03:30-03:45",
+      "interval" : "03:30 - 03:45",
       "intervalIndex" : 15,
-      "predictedPriceEurMhw" : -500.0,
+      "predictedPriceEurMwh" : -500.0,
       "spikeProbability" : 0.0
     }, {
-      "interval" : "03:45-04:00",
+      "interval" : "03:45 - 04:00",
       "intervalIndex" : 16,
-      "predictedPriceEurMhw" : 256.37,
+      "predictedPriceEurMwh" : 256.37,
       "spikeProbability" : 0.62
     }, {
-      "interval" : "04:00-04:15",
+      "interval" : "04:00 - 04:15",
       "intervalIndex" : 17,
-      "predictedPriceEurMhw" : 256.84,
+      "predictedPriceEurMwh" : 256.84,
       "spikeProbability" : 0.62
     }, {
-      "interval" : "04:15-04:30",
+      "interval" : "04:15 - 04:30",
       "intervalIndex" : 18,
-      "predictedPriceEurMhw" : 256.84,
+      "predictedPriceEurMwh" : 256.84,
       "spikeProbability" : 0.62
     }, {
-      "interval" : "04:30-04:45",
+      "interval" : "04:30 - 04:45",
       "intervalIndex" : 19,
-      "predictedPriceEurMhw" : 256.84,
+      "predictedPriceEurMwh" : 256.84,
       "spikeProbability" : 0.62
     }, {
-      "interval" : "04:45-05:00",
+      "interval" : "04:45 - 05:00",
       "intervalIndex" : 20,
-      "predictedPriceEurMhw" : 256.84,
+      "predictedPriceEurMwh" : 256.84,
       "spikeProbability" : 0.62
     }, {
-      "interval" : "05:00-05:15",
+      "interval" : "05:00 - 05:15",
       "intervalIndex" : 21,
-      "predictedPriceEurMhw" : 259.1,
+      "predictedPriceEurMwh" : 259.1,
       "spikeProbability" : 0.61
     }, {
-      "interval" : "05:15-05:30",
+      "interval" : "05:15 - 05:30",
       "intervalIndex" : 22,
-      "predictedPriceEurMhw" : 259.1,
+      "predictedPriceEurMwh" : 259.1,
       "spikeProbability" : 0.61
     }, {
-      "interval" : "05:30-05:45",
+      "interval" : "05:30 - 05:45",
       "intervalIndex" : 23,
-      "predictedPriceEurMhw" : 259.1,
+      "predictedPriceEurMwh" : 259.1,
       "spikeProbability" : 0.61
     }, {
-      "interval" : "05:45-06:00",
+      "interval" : "05:45 - 06:00",
       "intervalIndex" : 24,
-      "predictedPriceEurMhw" : 259.1,
+      "predictedPriceEurMwh" : 259.1,
       "spikeProbability" : 0.61
     }, {
-      "interval" : "06:00-06:15",
+      "interval" : "06:00 - 06:15",
       "intervalIndex" : 25,
-      "predictedPriceEurMhw" : 260.47,
+      "predictedPriceEurMwh" : 260.47,
       "spikeProbability" : 0.82
     }, {
-      "interval" : "06:15-06:30",
+      "interval" : "06:15 - 06:30",
       "intervalIndex" : 26,
-      "predictedPriceEurMhw" : 260.47,
+      "predictedPriceEurMwh" : 260.47,
       "spikeProbability" : 0.82
     }, {
-      "interval" : "06:30-06:45",
+      "interval" : "06:30 - 06:45",
       "intervalIndex" : 27,
-      "predictedPriceEurMhw" : 4000.0,
+      "predictedPriceEurMwh" : 4000.0,
       "spikeProbability" : 1.0
     }, {
-      "interval" : "06:45-07:00",
+      "interval" : "06:45 - 07:00",
       "intervalIndex" : 28,
-      "predictedPriceEurMhw" : 260.47,
+      "predictedPriceEurMwh" : 260.47,
       "spikeProbability" : 0.82
     } ]
   } ]

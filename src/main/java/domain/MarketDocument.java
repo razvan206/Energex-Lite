@@ -1,13 +1,13 @@
 package domain;
 
-import com.sun.source.tree.Tree;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class MarketDocument {
+public final class MarketDocument {
+    private static final int MAX_INTERVAL_INDEX = 96;
+
     private DataType dataType;
     private String biddingZoneDomain;
     private String periodStart;
@@ -18,31 +18,40 @@ public class MarketDocument {
     private String currencyUnit;
     private String date;
     private Map<Integer, MarketPoint> points = new TreeMap<>();
-    // we use TreeMap to have the intervals sorted out and to have O(1) acces time to elements
 
-    public void addOrUpdatePoint(MarketPoint point){
-        if(point != null && point.getIntervalIndex() >=1 && point.getIntervalIndex() <= 96)
+    public void addOrUpdatePoint(final MarketPoint point) {
+        if (point != null && point.getIntervalIndex() >= 1
+                && point.getIntervalIndex() <= MAX_INTERVAL_INDEX) {
             this.points.put(point.getIntervalIndex(), point);
+        }
     }
-    // put the points in map
 
-    public MarketPoint getPoint(int intervalIndex){
+    public MarketPoint getPoint(final int intervalIndex) {
         return this.points.get(intervalIndex);
     }
 
-    public void setPointsFromList(List<MarketPoint> pointsList){
-        if(pointsList != null)
-            for(MarketPoint p : pointsList)
-                if(p != null)
-                    this.points.put(p.getIntervalIndex(),p);
+    public void setPointsFromList(final List<MarketPoint> pointsList) {
+        if (pointsList != null) {
+            for (MarketPoint p : pointsList) {
+                if (p != null) {
+                    this.points.put(p.getIntervalIndex(), p);
+                }
+            }
+        }
     }
-    // populate the map from JSON
 
-    public List<MarketPoint> getPointsAsList(){
+    public List<MarketPoint> getPointsAsList() {
         return new ArrayList<>(this.points.values());
     }
 
-    public MarketDocument(DataType dataType, String biddingZoneDomain, String periodStart, String periodEnd, String resolution, String priceMeasureUnit, String quantityMeasureUnit, String currencyUnit, Map<Integer, MarketPoint> points) {
+    public MarketDocument(final DataType dataType,
+                          final String biddingZoneDomain,
+                          final String periodStart, final String periodEnd,
+                          final String resolution,
+                          final String priceMeasureUnit,
+                          final String quantityMeasureUnit,
+                          final String currencyUnit,
+                          final Map<Integer, MarketPoint> points) {
         this.dataType = dataType;
         this.biddingZoneDomain = biddingZoneDomain;
         this.periodStart = periodStart;
@@ -53,7 +62,8 @@ public class MarketDocument {
         this.currencyUnit = currencyUnit;
         this.points = points;
     }
-    public MarketDocument(DataType type, String date){
+
+    public MarketDocument(final DataType type, final String date) {
         this.dataType = type;
         this.date = date;
         this.points = new TreeMap<>();
@@ -91,23 +101,27 @@ public class MarketDocument {
         return dataType;
     }
 
-    public void setDataType(DataType dataType) {
+    public void setDataType(final DataType dataType) {
         this.dataType = dataType;
     }
 
-    public String getDate(){
+    public String getDate() {
         return date;
     }
 
-    public void setDate(String date){
+    public void setDate(final String date) {
         this.date = date;
     }
 
     public Map<Integer, MarketPoint> getPointsMap() {
         return points;
     }
-    public void setPoints(Map<Integer, MarketPoint> points) {
+
+    public void setPoints(final Map<Integer, MarketPoint> points) {
         this.points = points;
     }
-}
 
+    public void removePoint(final int intervalIndex) {
+        this.points.remove(intervalIndex);
+    }
+}

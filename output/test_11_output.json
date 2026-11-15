@@ -1,30 +1,30 @@
 [ {
   "command" : "get",
   "timestamp" : "2025-10-15T01:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T00:00",
   "to" : "2025-10-15T01:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "00:00 - 00:15",
       "intervalIndex" : 1,
-      "positiveImbalanceVolume" : 0.0,
-      "negativeImbalanceVolume" : 0.0
+      "positiveImbalanceVol" : 0.0,
+      "negativeImbalanceVol" : 0.0
     }, {
       "interval" : "00:30 - 00:45",
       "intervalIndex" : 3,
-      "positiveImbalanceVolume" : 21.3,
-      "negativeImbalanceVolume" : 15.4
+      "positiveImbalanceVol" : 21.3,
+      "negativeImbalanceVol" : 15.4
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T00:00",
   "to" : "2025-10-15T01:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -43,9 +43,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T00:00",
   "to" : "2025-10-15T01:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -62,9 +62,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T00:00",
   "to" : "2025-10-15T01:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -81,9 +81,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T00:00",
   "to" : "2025-10-15T01:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -100,21 +100,21 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T00:00",
   "to" : "2025-10-15T01:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "00:00 - 00:15",
       "intervalIndex" : 1,
-      "predictedPriceEurMhw" : 103.3,
+      "predictedPriceEurMwh" : 103.3,
       "spikeProbability" : 0.18
     }, {
       "interval" : "00:30 - 00:45",
       "intervalIndex" : 3,
-      "predictedPriceEurMhw" : 105.9,
+      "predictedPriceEurMwh" : 105.9,
       "spikeProbability" : 0.34
     } ]
   } ]
@@ -138,51 +138,51 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:15",
   "to" : "2025-10-15T01:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "01:15 - 01:30",
       "intervalIndex" : 6,
-      "positiveImbalanceVolume" : 27.6,
-      "negativeImbalanceVolume" : 20.8
+      "positiveImbalanceVol" : 27.6,
+      "negativeImbalanceVol" : 20.8
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T00:30",
   "to" : "2025-10-15T01:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "00:30 - 00:45",
       "intervalIndex" : 3,
-      "positiveImbalanceVolume" : 21.3,
-      "negativeImbalanceVolume" : 15.4
+      "positiveImbalanceVol" : 21.3,
+      "negativeImbalanceVol" : 15.4
     }, {
       "interval" : "01:00 - 01:15",
       "intervalIndex" : 5,
-      "positiveImbalanceVolume" : 25.5,
-      "negativeImbalanceVolume" : 19.0
+      "positiveImbalanceVol" : 25.5,
+      "negativeImbalanceVol" : 19.0
     }, {
       "interval" : "01:15 - 01:30",
       "intervalIndex" : 6,
-      "positiveImbalanceVolume" : 27.6,
-      "negativeImbalanceVolume" : 20.8
+      "positiveImbalanceVol" : 27.6,
+      "negativeImbalanceVol" : 20.8
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T00:30",
   "to" : "2025-10-15T01:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -206,9 +206,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T00:30",
   "to" : "2025-10-15T01:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -229,9 +229,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T00:30",
   "to" : "2025-10-15T01:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -252,9 +252,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T00:30",
   "to" : "2025-10-15T01:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -271,51 +271,51 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T00:30",
   "to" : "2025-10-15T01:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "00:30 - 00:45",
       "intervalIndex" : 3,
-      "predictedPriceEurMhw" : 105.9,
+      "predictedPriceEurMwh" : 105.9,
       "spikeProbability" : 0.34
     }, {
       "interval" : "01:00 - 01:15",
       "intervalIndex" : 5,
-      "predictedPriceEurMhw" : 108.5,
+      "predictedPriceEurMwh" : 108.5,
       "spikeProbability" : 0.5
     }, {
       "interval" : "01:15 - 01:30",
       "intervalIndex" : 6,
-      "predictedPriceEurMhw" : 109.8,
+      "predictedPriceEurMwh" : 109.8,
       "spikeProbability" : 0.1
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:45",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:30",
   "to" : "2025-10-15T01:45",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "01:30 - 01:45",
       "intervalIndex" : 7,
-      "positiveImbalanceVolume" : 29.7,
-      "negativeImbalanceVolume" : 22.6
+      "positiveImbalanceVol" : 29.7,
+      "negativeImbalanceVol" : 22.6
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T01:45",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:30",
   "to" : "2025-10-15T01:45",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -329,9 +329,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:45",
   "to" : "2025-10-15T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -344,9 +344,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:45",
   "to" : "2025-10-15T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -359,25 +359,25 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:45",
   "to" : "2025-10-15T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "01:45 - 02:00",
       "intervalIndex" : 8,
-      "predictedPriceEurMhw" : -500.0,
+      "predictedPriceEurMwh" : -500.0,
       "spikeProbability" : 0.0
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:45",
   "to" : "2025-10-15T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -390,40 +390,40 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:00",
   "to" : "2025-10-15T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "01:00 - 01:15",
       "intervalIndex" : 5,
-      "positiveImbalanceVolume" : 25.5,
-      "negativeImbalanceVolume" : 19.0
+      "positiveImbalanceVol" : 25.5,
+      "negativeImbalanceVol" : 19.0
     }, {
       "interval" : "01:15 - 01:30",
       "intervalIndex" : 6,
-      "positiveImbalanceVolume" : 27.6,
-      "negativeImbalanceVolume" : 20.8
+      "positiveImbalanceVol" : 27.6,
+      "negativeImbalanceVol" : 20.8
     }, {
       "interval" : "01:30 - 01:45",
       "intervalIndex" : 7,
-      "positiveImbalanceVolume" : 29.7,
-      "negativeImbalanceVolume" : 22.6
+      "positiveImbalanceVol" : 29.7,
+      "negativeImbalanceVol" : 22.6
     }, {
       "interval" : "01:45 - 02:00",
       "intervalIndex" : 8,
-      "positiveImbalanceVolume" : 0.0,
-      "negativeImbalanceVolume" : 0.0
+      "positiveImbalanceVol" : 0.0,
+      "negativeImbalanceVol" : 0.0
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:00",
   "to" : "2025-10-15T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -452,9 +452,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:00",
   "to" : "2025-10-15T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -479,9 +479,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:00",
   "to" : "2025-10-15T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -506,9 +506,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:00",
   "to" : "2025-10-15T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -529,71 +529,71 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:00",
   "to" : "2025-10-15T02:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "01:00 - 01:15",
       "intervalIndex" : 5,
-      "predictedPriceEurMhw" : 108.5,
+      "predictedPriceEurMwh" : 108.5,
       "spikeProbability" : 0.5
     }, {
       "interval" : "01:15 - 01:30",
       "intervalIndex" : 6,
-      "predictedPriceEurMhw" : 109.8,
+      "predictedPriceEurMwh" : 109.8,
       "spikeProbability" : 0.1
     }, {
       "interval" : "01:30 - 01:45",
       "intervalIndex" : 7,
-      "predictedPriceEurMhw" : 111.1,
+      "predictedPriceEurMwh" : 111.1,
       "spikeProbability" : 0.18
     }, {
       "interval" : "01:45 - 02:00",
       "intervalIndex" : 8,
-      "predictedPriceEurMhw" : -500.0,
+      "predictedPriceEurMwh" : -500.0,
       "spikeProbability" : 0.0
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:30",
   "to" : "2025-10-15T02:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "01:30 - 01:45",
       "intervalIndex" : 7,
-      "positiveImbalanceVolume" : 29.7,
-      "negativeImbalanceVolume" : 22.6
+      "positiveImbalanceVol" : 29.7,
+      "negativeImbalanceVol" : 22.6
     }, {
       "interval" : "01:45 - 02:00",
       "intervalIndex" : 8,
-      "positiveImbalanceVolume" : 0.0,
-      "negativeImbalanceVolume" : 0.0
+      "positiveImbalanceVol" : 0.0,
+      "negativeImbalanceVol" : 0.0
     }, {
       "interval" : "02:00 - 02:15",
       "intervalIndex" : 9,
-      "positiveImbalanceVolume" : 33.9,
-      "negativeImbalanceVolume" : 26.2
+      "positiveImbalanceVol" : 33.9,
+      "negativeImbalanceVol" : 26.2
     }, {
       "interval" : "02:15 - 02:30",
       "intervalIndex" : 10,
-      "positiveImbalanceVolume" : 36.0,
-      "negativeImbalanceVolume" : 28.0
+      "positiveImbalanceVol" : 36.0,
+      "negativeImbalanceVol" : 28.0
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:30",
   "to" : "2025-10-15T02:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -622,9 +622,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:30",
   "to" : "2025-10-15T02:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -649,9 +649,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:30",
   "to" : "2025-10-15T02:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -676,9 +676,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:30",
   "to" : "2025-10-15T02:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -703,31 +703,31 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T02:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T01:30",
   "to" : "2025-10-15T02:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "01:30 - 01:45",
       "intervalIndex" : 7,
-      "predictedPriceEurMhw" : 111.1,
+      "predictedPriceEurMwh" : 111.1,
       "spikeProbability" : 0.18
     }, {
       "interval" : "01:45 - 02:00",
       "intervalIndex" : 8,
-      "predictedPriceEurMhw" : -500.0,
+      "predictedPriceEurMwh" : -500.0,
       "spikeProbability" : 0.0
     }, {
       "interval" : "02:00 - 02:15",
       "intervalIndex" : 9,
-      "predictedPriceEurMhw" : 113.7,
+      "predictedPriceEurMwh" : 113.7,
       "spikeProbability" : 0.34
     }, {
       "interval" : "02:15 - 02:30",
       "intervalIndex" : 10,
-      "predictedPriceEurMhw" : 115.0,
+      "predictedPriceEurMwh" : 115.0,
       "spikeProbability" : 0.42
     } ]
   } ]
@@ -739,39 +739,39 @@
   "date" : "2025-10-15",
   "interval" : "02:45 - 03:00",
   "intervalIndex" : 12,
-  "message" : "SpikeProbability 1.75 is outside valid range [0.0,1.0]; interval skipped."
+  "message" : "SpikeProbability 1.75 is outside the valid range [0.0, 1.0]; interval skipped."
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T03:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T02:00",
   "to" : "2025-10-15T03:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "02:00 - 02:15",
       "intervalIndex" : 9,
-      "positiveImbalanceVolume" : 33.9,
-      "negativeImbalanceVolume" : 26.2
+      "positiveImbalanceVol" : 33.9,
+      "negativeImbalanceVol" : 26.2
     }, {
       "interval" : "02:15 - 02:30",
       "intervalIndex" : 10,
-      "positiveImbalanceVolume" : 36.0,
-      "negativeImbalanceVolume" : 28.0
+      "positiveImbalanceVol" : 36.0,
+      "negativeImbalanceVol" : 28.0
     }, {
       "interval" : "02:45 - 03:00",
       "intervalIndex" : 12,
-      "positiveImbalanceVolume" : 40.2,
-      "negativeImbalanceVolume" : 31.6
+      "positiveImbalanceVol" : 40.2,
+      "negativeImbalanceVol" : 31.6
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T03:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T02:00",
   "to" : "2025-10-15T03:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -795,9 +795,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T03:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T02:00",
   "to" : "2025-10-15T03:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -818,9 +818,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T03:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T02:00",
   "to" : "2025-10-15T03:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -841,9 +841,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T03:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T02:00",
   "to" : "2025-10-15T03:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -864,51 +864,51 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T03:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T02:00",
   "to" : "2025-10-15T03:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "02:00 - 02:15",
       "intervalIndex" : 9,
-      "predictedPriceEurMhw" : 113.7,
+      "predictedPriceEurMwh" : 113.7,
       "spikeProbability" : 0.34
     }, {
       "interval" : "02:15 - 02:30",
       "intervalIndex" : 10,
-      "predictedPriceEurMhw" : 115.0,
+      "predictedPriceEurMwh" : 115.0,
       "spikeProbability" : 0.42
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T03:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T02:30",
   "to" : "2025-10-15T03:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "02:45 - 03:00",
       "intervalIndex" : 12,
-      "positiveImbalanceVolume" : 40.2,
-      "negativeImbalanceVolume" : 31.6
+      "positiveImbalanceVol" : 40.2,
+      "negativeImbalanceVol" : 31.6
     }, {
       "interval" : "03:00 - 03:15",
       "intervalIndex" : 13,
-      "positiveImbalanceVolume" : 42.3,
-      "negativeImbalanceVolume" : 33.4
+      "positiveImbalanceVol" : 42.3,
+      "negativeImbalanceVol" : 33.4
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T03:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T02:30",
   "to" : "2025-10-15T03:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -927,9 +927,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T03:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T02:30",
   "to" : "2025-10-15T03:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -946,9 +946,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T03:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T02:30",
   "to" : "2025-10-15T03:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -965,9 +965,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T03:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T02:30",
   "to" : "2025-10-15T03:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -984,46 +984,46 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T03:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T02:30",
   "to" : "2025-10-15T03:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "03:00 - 03:15",
       "intervalIndex" : 13,
-      "predictedPriceEurMhw" : 118.9,
+      "predictedPriceEurMwh" : 118.9,
       "spikeProbability" : 0.18
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T04:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T03:00",
   "to" : "2025-10-15T04:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "03:00 - 03:15",
       "intervalIndex" : 13,
-      "positiveImbalanceVolume" : 42.3,
-      "negativeImbalanceVolume" : 33.4
+      "positiveImbalanceVol" : 42.3,
+      "negativeImbalanceVol" : 33.4
     }, {
       "interval" : "03:30 - 03:45",
       "intervalIndex" : 15,
-      "positiveImbalanceVolume" : 46.5,
-      "negativeImbalanceVolume" : 37.0
+      "positiveImbalanceVol" : 46.5,
+      "negativeImbalanceVol" : 37.0
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T04:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T03:00",
   "to" : "2025-10-15T04:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -1042,9 +1042,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T04:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T03:00",
   "to" : "2025-10-15T04:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -1061,9 +1061,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T04:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T03:00",
   "to" : "2025-10-15T04:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -1080,9 +1080,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T04:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T03:00",
   "to" : "2025-10-15T04:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -1099,21 +1099,21 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T04:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T03:00",
   "to" : "2025-10-15T04:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "03:00 - 03:15",
       "intervalIndex" : 13,
-      "predictedPriceEurMhw" : 118.9,
+      "predictedPriceEurMwh" : 118.9,
       "spikeProbability" : 0.18
     }, {
       "interval" : "03:30 - 03:45",
       "intervalIndex" : 15,
-      "predictedPriceEurMhw" : 121.5,
+      "predictedPriceEurMwh" : 121.5,
       "spikeProbability" : 0.34
     } ]
   } ]
@@ -1129,35 +1129,35 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T04:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T03:30",
   "to" : "2025-10-15T04:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "03:30 - 03:45",
       "intervalIndex" : 15,
-      "positiveImbalanceVolume" : 46.5,
-      "negativeImbalanceVolume" : 37.0
+      "positiveImbalanceVol" : 46.5,
+      "negativeImbalanceVol" : 37.0
     }, {
       "interval" : "04:00 - 04:15",
       "intervalIndex" : 17,
-      "positiveImbalanceVolume" : 50.7,
-      "negativeImbalanceVolume" : 40.6
+      "positiveImbalanceVol" : 50.7,
+      "negativeImbalanceVol" : 40.6
     }, {
       "interval" : "04:15 - 04:30",
       "intervalIndex" : 18,
-      "positiveImbalanceVolume" : 52.8,
-      "negativeImbalanceVolume" : 42.4
+      "positiveImbalanceVol" : 52.8,
+      "negativeImbalanceVol" : 42.4
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T04:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T03:30",
   "to" : "2025-10-15T04:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -1176,9 +1176,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T04:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T03:30",
   "to" : "2025-10-15T04:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -1199,9 +1199,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T04:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T03:30",
   "to" : "2025-10-15T04:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -1222,9 +1222,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T04:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T03:30",
   "to" : "2025-10-15T04:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -1245,26 +1245,26 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T04:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T03:30",
   "to" : "2025-10-15T04:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "03:30 - 03:45",
       "intervalIndex" : 15,
-      "predictedPriceEurMhw" : 121.5,
+      "predictedPriceEurMwh" : 121.5,
       "spikeProbability" : 0.34
     }, {
       "interval" : "04:00 - 04:15",
       "intervalIndex" : 17,
-      "predictedPriceEurMhw" : 124.1,
+      "predictedPriceEurMwh" : 124.1,
       "spikeProbability" : 0.5
     }, {
       "interval" : "04:15 - 04:30",
       "intervalIndex" : 18,
-      "predictedPriceEurMhw" : 125.4,
+      "predictedPriceEurMwh" : 125.4,
       "spikeProbability" : 0.1
     } ]
   } ]
@@ -1298,40 +1298,40 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T05:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T04:00",
   "to" : "2025-10-15T05:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "04:00 - 04:15",
       "intervalIndex" : 17,
-      "positiveImbalanceVolume" : 50.7,
-      "negativeImbalanceVolume" : 40.6
+      "positiveImbalanceVol" : 50.7,
+      "negativeImbalanceVol" : 40.6
     }, {
       "interval" : "04:15 - 04:30",
       "intervalIndex" : 18,
-      "positiveImbalanceVolume" : 52.8,
-      "negativeImbalanceVolume" : 42.4
+      "positiveImbalanceVol" : 52.8,
+      "negativeImbalanceVol" : 42.4
     }, {
       "interval" : "04:30 - 04:45",
       "intervalIndex" : 19,
-      "positiveImbalanceVolume" : 54.9,
-      "negativeImbalanceVolume" : 44.2
+      "positiveImbalanceVol" : 54.9,
+      "negativeImbalanceVol" : 44.2
     }, {
       "interval" : "04:45 - 05:00",
       "intervalIndex" : 20,
-      "positiveImbalanceVolume" : 57.0,
-      "negativeImbalanceVolume" : 46.0
+      "positiveImbalanceVol" : 57.0,
+      "negativeImbalanceVol" : 46.0
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T05:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T04:00",
   "to" : "2025-10-15T05:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -1355,9 +1355,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T05:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T04:00",
   "to" : "2025-10-15T05:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -1378,9 +1378,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T05:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T04:00",
   "to" : "2025-10-15T05:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -1401,9 +1401,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T05:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T04:00",
   "to" : "2025-10-15T05:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -1424,31 +1424,31 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T05:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T04:00",
   "to" : "2025-10-15T05:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "04:00 - 04:15",
       "intervalIndex" : 17,
-      "predictedPriceEurMhw" : 124.1,
+      "predictedPriceEurMwh" : 124.1,
       "spikeProbability" : 0.5
     }, {
       "interval" : "04:15 - 04:30",
       "intervalIndex" : 18,
-      "predictedPriceEurMhw" : 125.4,
+      "predictedPriceEurMwh" : 125.4,
       "spikeProbability" : 0.1
     }, {
       "interval" : "04:30 - 04:45",
       "intervalIndex" : 19,
-      "predictedPriceEurMhw" : 126.7,
+      "predictedPriceEurMwh" : 126.7,
       "spikeProbability" : 0.18
     }, {
       "interval" : "04:45 - 05:00",
       "intervalIndex" : 20,
-      "predictedPriceEurMhw" : 128.0,
+      "predictedPriceEurMwh" : 128.0,
       "spikeProbability" : 0.26
     } ]
   } ]
@@ -1489,40 +1489,40 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T05:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T04:30",
   "to" : "2025-10-15T05:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "04:30 - 04:45",
       "intervalIndex" : 19,
-      "positiveImbalanceVolume" : 54.9,
-      "negativeImbalanceVolume" : 44.2
+      "positiveImbalanceVol" : 54.9,
+      "negativeImbalanceVol" : 44.2
     }, {
       "interval" : "04:45 - 05:00",
       "intervalIndex" : 20,
-      "positiveImbalanceVolume" : 57.0,
-      "negativeImbalanceVolume" : 46.0
+      "positiveImbalanceVol" : 57.0,
+      "negativeImbalanceVol" : 46.0
     }, {
       "interval" : "05:00 - 05:15",
       "intervalIndex" : 21,
-      "positiveImbalanceVolume" : 59.1,
-      "negativeImbalanceVolume" : 47.8
+      "positiveImbalanceVol" : 59.1,
+      "negativeImbalanceVol" : 47.8
     }, {
       "interval" : "05:15 - 05:30",
       "intervalIndex" : 22,
-      "positiveImbalanceVolume" : 16.2,
-      "negativeImbalanceVolume" : 49.6
+      "positiveImbalanceVol" : 16.2,
+      "negativeImbalanceVol" : 49.6
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T05:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T04:30",
   "to" : "2025-10-15T05:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -1546,9 +1546,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T05:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T04:30",
   "to" : "2025-10-15T05:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -1569,9 +1569,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T05:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T04:30",
   "to" : "2025-10-15T05:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -1592,9 +1592,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T05:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T04:30",
   "to" : "2025-10-15T05:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -1615,26 +1615,26 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T05:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T04:30",
   "to" : "2025-10-15T05:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "04:30 - 04:45",
       "intervalIndex" : 19,
-      "predictedPriceEurMhw" : 126.7,
+      "predictedPriceEurMwh" : 126.7,
       "spikeProbability" : 0.18
     }, {
       "interval" : "04:45 - 05:00",
       "intervalIndex" : 20,
-      "predictedPriceEurMhw" : 128.0,
+      "predictedPriceEurMwh" : 128.0,
       "spikeProbability" : 0.26
     }, {
       "interval" : "05:15 - 05:30",
       "intervalIndex" : 22,
-      "predictedPriceEurMhw" : 130.6,
+      "predictedPriceEurMwh" : 130.6,
       "spikeProbability" : 0.42
     } ]
   } ]
@@ -1658,40 +1658,40 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T06:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T05:00",
   "to" : "2025-10-15T06:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "05:00 - 05:15",
       "intervalIndex" : 21,
-      "positiveImbalanceVolume" : 59.1,
-      "negativeImbalanceVolume" : 47.8
+      "positiveImbalanceVol" : 59.1,
+      "negativeImbalanceVol" : 47.8
     }, {
       "interval" : "05:15 - 05:30",
       "intervalIndex" : 22,
-      "positiveImbalanceVolume" : 16.2,
-      "negativeImbalanceVolume" : 49.6
+      "positiveImbalanceVol" : 16.2,
+      "negativeImbalanceVol" : 49.6
     }, {
       "interval" : "05:30 - 05:45",
       "intervalIndex" : 23,
-      "positiveImbalanceVolume" : 18.3,
-      "negativeImbalanceVolume" : 11.4
+      "positiveImbalanceVol" : 18.3,
+      "negativeImbalanceVol" : 11.4
     }, {
       "interval" : "05:45 - 06:00",
       "intervalIndex" : 24,
-      "positiveImbalanceVolume" : 20.4,
-      "negativeImbalanceVolume" : 13.2
+      "positiveImbalanceVol" : 20.4,
+      "negativeImbalanceVol" : 13.2
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T06:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T05:00",
   "to" : "2025-10-15T06:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -1715,9 +1715,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T06:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T05:00",
   "to" : "2025-10-15T06:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -1738,9 +1738,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T06:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T05:00",
   "to" : "2025-10-15T06:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -1765,9 +1765,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T06:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T05:00",
   "to" : "2025-10-15T06:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -1792,66 +1792,66 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T06:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T05:00",
   "to" : "2025-10-15T06:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "05:15 - 05:30",
       "intervalIndex" : 22,
-      "predictedPriceEurMhw" : 130.6,
+      "predictedPriceEurMwh" : 130.6,
       "spikeProbability" : 0.42
     }, {
       "interval" : "05:30 - 05:45",
       "intervalIndex" : 23,
-      "predictedPriceEurMhw" : 131.9,
+      "predictedPriceEurMwh" : 131.9,
       "spikeProbability" : 0.5
     }, {
       "interval" : "05:45 - 06:00",
       "intervalIndex" : 24,
-      "predictedPriceEurMhw" : 133.2,
+      "predictedPriceEurMwh" : 133.2,
       "spikeProbability" : 0.1
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T06:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T05:30",
   "to" : "2025-10-15T06:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "05:30 - 05:45",
       "intervalIndex" : 23,
-      "positiveImbalanceVolume" : 18.3,
-      "negativeImbalanceVolume" : 11.4
+      "positiveImbalanceVol" : 18.3,
+      "negativeImbalanceVol" : 11.4
     }, {
       "interval" : "05:45 - 06:00",
       "intervalIndex" : 24,
-      "positiveImbalanceVolume" : 20.4,
-      "negativeImbalanceVolume" : 13.2
+      "positiveImbalanceVol" : 20.4,
+      "negativeImbalanceVol" : 13.2
     }, {
       "interval" : "06:00 - 06:15",
       "intervalIndex" : 25,
-      "positiveImbalanceVolume" : 22.5,
-      "negativeImbalanceVolume" : 15.0
+      "positiveImbalanceVol" : 22.5,
+      "negativeImbalanceVol" : 15.0
     }, {
       "interval" : "06:15 - 06:30",
       "intervalIndex" : 26,
-      "positiveImbalanceVolume" : 24.6,
-      "negativeImbalanceVolume" : 16.8
+      "positiveImbalanceVol" : 24.6,
+      "negativeImbalanceVol" : 16.8
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T06:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T05:30",
   "to" : "2025-10-15T06:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -1880,9 +1880,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T06:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T05:30",
   "to" : "2025-10-15T06:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -1903,9 +1903,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T06:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T05:30",
   "to" : "2025-10-15T06:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -1930,9 +1930,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T06:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T05:30",
   "to" : "2025-10-15T06:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -1957,66 +1957,66 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T06:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T05:30",
   "to" : "2025-10-15T06:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "05:30 - 05:45",
       "intervalIndex" : 23,
-      "predictedPriceEurMhw" : 131.9,
+      "predictedPriceEurMwh" : 131.9,
       "spikeProbability" : 0.5
     }, {
       "interval" : "05:45 - 06:00",
       "intervalIndex" : 24,
-      "predictedPriceEurMhw" : 133.2,
+      "predictedPriceEurMwh" : 133.2,
       "spikeProbability" : 0.1
     }, {
       "interval" : "06:00 - 06:15",
       "intervalIndex" : 25,
-      "predictedPriceEurMhw" : 134.5,
+      "predictedPriceEurMwh" : 134.5,
       "spikeProbability" : 0.18
     }, {
       "interval" : "06:15 - 06:30",
       "intervalIndex" : 26,
-      "predictedPriceEurMhw" : 135.8,
+      "predictedPriceEurMwh" : 135.8,
       "spikeProbability" : 0.26
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T07:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T06:00",
   "to" : "2025-10-15T07:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "06:00 - 06:15",
       "intervalIndex" : 25,
-      "positiveImbalanceVolume" : 22.5,
-      "negativeImbalanceVolume" : 15.0
+      "positiveImbalanceVol" : 22.5,
+      "negativeImbalanceVol" : 15.0
     }, {
       "interval" : "06:15 - 06:30",
       "intervalIndex" : 26,
-      "positiveImbalanceVolume" : 24.6,
-      "negativeImbalanceVolume" : 16.8
+      "positiveImbalanceVol" : 24.6,
+      "negativeImbalanceVol" : 16.8
     }, {
       "interval" : "06:45 - 07:00",
       "intervalIndex" : 28,
-      "positiveImbalanceVolume" : 28.8,
-      "negativeImbalanceVolume" : 20.4
+      "positiveImbalanceVol" : 28.8,
+      "negativeImbalanceVol" : 20.4
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T07:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T06:00",
   "to" : "2025-10-15T07:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -2040,9 +2040,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T07:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T06:00",
   "to" : "2025-10-15T07:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -2063,9 +2063,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T07:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T06:00",
   "to" : "2025-10-15T07:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -2086,9 +2086,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T07:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T06:00",
   "to" : "2025-10-15T07:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -2109,26 +2109,26 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T07:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T06:00",
   "to" : "2025-10-15T07:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "06:00 - 06:15",
       "intervalIndex" : 25,
-      "predictedPriceEurMhw" : 134.5,
+      "predictedPriceEurMwh" : 134.5,
       "spikeProbability" : 0.18
     }, {
       "interval" : "06:15 - 06:30",
       "intervalIndex" : 26,
-      "predictedPriceEurMhw" : 135.8,
+      "predictedPriceEurMwh" : 135.8,
       "spikeProbability" : 0.26
     }, {
       "interval" : "06:45 - 07:00",
       "intervalIndex" : 28,
-      "predictedPriceEurMhw" : 138.4,
+      "predictedPriceEurMwh" : 138.4,
       "spikeProbability" : 0.42
     } ]
   } ]
@@ -2152,30 +2152,30 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T07:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T06:30",
   "to" : "2025-10-15T07:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "06:45 - 07:00",
       "intervalIndex" : 28,
-      "positiveImbalanceVolume" : 28.8,
-      "negativeImbalanceVolume" : 20.4
+      "positiveImbalanceVol" : 28.8,
+      "negativeImbalanceVol" : 20.4
     }, {
       "interval" : "07:15 - 07:30",
       "intervalIndex" : 30,
-      "positiveImbalanceVolume" : 33.0,
-      "negativeImbalanceVolume" : 24.0
+      "positiveImbalanceVol" : 33.0,
+      "negativeImbalanceVol" : 24.0
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T07:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T06:30",
   "to" : "2025-10-15T07:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -2194,9 +2194,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T07:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T06:30",
   "to" : "2025-10-15T07:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -2213,9 +2213,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T07:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T06:30",
   "to" : "2025-10-15T07:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -2232,21 +2232,21 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T07:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T06:30",
   "to" : "2025-10-15T07:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "06:45 - 07:00",
       "intervalIndex" : 28,
-      "predictedPriceEurMhw" : 138.4,
+      "predictedPriceEurMwh" : 138.4,
       "spikeProbability" : 0.42
     }, {
       "interval" : "07:15 - 07:30",
       "intervalIndex" : 30,
-      "predictedPriceEurMhw" : 141.0,
+      "predictedPriceEurMwh" : 141.0,
       "spikeProbability" : 0.1
     } ]
   } ]
@@ -2262,35 +2262,35 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T08:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T07:00",
   "to" : "2025-10-15T08:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "07:15 - 07:30",
       "intervalIndex" : 30,
-      "positiveImbalanceVolume" : 33.0,
-      "negativeImbalanceVolume" : 24.0
+      "positiveImbalanceVol" : 33.0,
+      "negativeImbalanceVol" : 24.0
     }, {
       "interval" : "07:30 - 07:45",
       "intervalIndex" : 31,
-      "positiveImbalanceVolume" : 35.1,
-      "negativeImbalanceVolume" : 25.8
+      "positiveImbalanceVol" : 35.1,
+      "negativeImbalanceVol" : 25.8
     }, {
       "interval" : "07:45 - 08:00",
       "intervalIndex" : 32,
-      "positiveImbalanceVolume" : 37.2,
-      "negativeImbalanceVolume" : 27.6
+      "positiveImbalanceVol" : 37.2,
+      "negativeImbalanceVol" : 27.6
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T08:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T07:00",
   "to" : "2025-10-15T08:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -2314,9 +2314,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T08:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T07:00",
   "to" : "2025-10-15T08:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -2337,9 +2337,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T08:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T07:00",
   "to" : "2025-10-15T08:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -2356,9 +2356,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T08:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T07:00",
   "to" : "2025-10-15T08:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -2375,26 +2375,26 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T08:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T07:00",
   "to" : "2025-10-15T08:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "07:15 - 07:30",
       "intervalIndex" : 30,
-      "predictedPriceEurMhw" : 141.0,
+      "predictedPriceEurMwh" : 141.0,
       "spikeProbability" : 0.1
     }, {
       "interval" : "07:30 - 07:45",
       "intervalIndex" : 31,
-      "predictedPriceEurMhw" : 142.3,
+      "predictedPriceEurMwh" : 142.3,
       "spikeProbability" : 0.18
     }, {
       "interval" : "07:45 - 08:00",
       "intervalIndex" : 32,
-      "predictedPriceEurMhw" : 143.6,
+      "predictedPriceEurMwh" : 143.6,
       "spikeProbability" : 0.26
     } ]
   } ]
@@ -2426,40 +2426,40 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T08:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T07:30",
   "to" : "2025-10-15T08:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "07:30 - 07:45",
       "intervalIndex" : 31,
-      "positiveImbalanceVolume" : 35.1,
-      "negativeImbalanceVolume" : 25.8
+      "positiveImbalanceVol" : 35.1,
+      "negativeImbalanceVol" : 25.8
     }, {
       "interval" : "07:45 - 08:00",
       "intervalIndex" : 32,
-      "positiveImbalanceVolume" : 37.2,
-      "negativeImbalanceVolume" : 27.6
+      "positiveImbalanceVol" : 37.2,
+      "negativeImbalanceVol" : 27.6
     }, {
       "interval" : "08:00 - 08:15",
       "intervalIndex" : 33,
-      "positiveImbalanceVolume" : 39.3,
-      "negativeImbalanceVolume" : 29.4
+      "positiveImbalanceVol" : 39.3,
+      "negativeImbalanceVol" : 29.4
     }, {
       "interval" : "08:15 - 08:30",
       "intervalIndex" : 34,
-      "positiveImbalanceVolume" : 41.4,
-      "negativeImbalanceVolume" : 31.2
+      "positiveImbalanceVol" : 41.4,
+      "negativeImbalanceVol" : 31.2
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T08:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T07:30",
   "to" : "2025-10-15T08:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -2483,9 +2483,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T08:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T07:30",
   "to" : "2025-10-15T08:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -2506,9 +2506,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T08:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T07:30",
   "to" : "2025-10-15T08:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -2529,9 +2529,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T08:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T07:30",
   "to" : "2025-10-15T08:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -2556,31 +2556,31 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T08:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T07:30",
   "to" : "2025-10-15T08:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "07:30 - 07:45",
       "intervalIndex" : 31,
-      "predictedPriceEurMhw" : 142.3,
+      "predictedPriceEurMwh" : 142.3,
       "spikeProbability" : 0.18
     }, {
       "interval" : "07:45 - 08:00",
       "intervalIndex" : 32,
-      "predictedPriceEurMhw" : 143.6,
+      "predictedPriceEurMwh" : 143.6,
       "spikeProbability" : 0.26
     }, {
       "interval" : "08:00 - 08:15",
       "intervalIndex" : 33,
-      "predictedPriceEurMhw" : 4000.0,
+      "predictedPriceEurMwh" : 4000.0,
       "spikeProbability" : 1.0
     }, {
       "interval" : "08:15 - 08:30",
       "intervalIndex" : 34,
-      "predictedPriceEurMhw" : 146.2,
+      "predictedPriceEurMwh" : 146.2,
       "spikeProbability" : 0.42
     } ]
   } ]
@@ -2604,40 +2604,40 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T09:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T08:00",
   "to" : "2025-10-15T09:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "08:00 - 08:15",
       "intervalIndex" : 33,
-      "positiveImbalanceVolume" : 39.3,
-      "negativeImbalanceVolume" : 29.4
+      "positiveImbalanceVol" : 39.3,
+      "negativeImbalanceVol" : 29.4
     }, {
       "interval" : "08:15 - 08:30",
       "intervalIndex" : 34,
-      "positiveImbalanceVolume" : 41.4,
-      "negativeImbalanceVolume" : 31.2
+      "positiveImbalanceVol" : 41.4,
+      "negativeImbalanceVol" : 31.2
     }, {
       "interval" : "08:30 - 08:45",
       "intervalIndex" : 35,
-      "positiveImbalanceVolume" : 43.5,
-      "negativeImbalanceVolume" : 33.0
+      "positiveImbalanceVol" : 43.5,
+      "negativeImbalanceVol" : 33.0
     }, {
       "interval" : "08:45 - 09:00",
       "intervalIndex" : 36,
-      "positiveImbalanceVolume" : 45.6,
-      "negativeImbalanceVolume" : 34.8
+      "positiveImbalanceVol" : 45.6,
+      "negativeImbalanceVol" : 34.8
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T09:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T08:00",
   "to" : "2025-10-15T09:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -2661,9 +2661,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T09:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T08:00",
   "to" : "2025-10-15T09:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -2684,9 +2684,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T09:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T08:00",
   "to" : "2025-10-15T09:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -2707,9 +2707,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T09:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T08:00",
   "to" : "2025-10-15T09:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -2734,66 +2734,66 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T09:00",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T08:00",
   "to" : "2025-10-15T09:00",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "08:00 - 08:15",
       "intervalIndex" : 33,
-      "predictedPriceEurMhw" : 4000.0,
+      "predictedPriceEurMwh" : 4000.0,
       "spikeProbability" : 1.0
     }, {
       "interval" : "08:15 - 08:30",
       "intervalIndex" : 34,
-      "predictedPriceEurMhw" : 146.2,
+      "predictedPriceEurMwh" : 146.2,
       "spikeProbability" : 0.42
     }, {
       "interval" : "08:30 - 08:45",
       "intervalIndex" : 35,
-      "predictedPriceEurMhw" : 102.5,
+      "predictedPriceEurMwh" : 102.5,
       "spikeProbability" : 0.5
     }, {
       "interval" : "08:45 - 09:00",
       "intervalIndex" : 36,
-      "predictedPriceEurMhw" : 103.8,
+      "predictedPriceEurMwh" : 103.8,
       "spikeProbability" : 0.1
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T09:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T08:30",
   "to" : "2025-10-15T09:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "08:30 - 08:45",
       "intervalIndex" : 35,
-      "positiveImbalanceVolume" : 43.5,
-      "negativeImbalanceVolume" : 33.0
+      "positiveImbalanceVol" : 43.5,
+      "negativeImbalanceVol" : 33.0
     }, {
       "interval" : "08:45 - 09:00",
       "intervalIndex" : 36,
-      "positiveImbalanceVolume" : 45.6,
-      "negativeImbalanceVolume" : 34.8
+      "positiveImbalanceVol" : 45.6,
+      "negativeImbalanceVol" : 34.8
     }, {
       "interval" : "09:00 - 09:15",
       "intervalIndex" : 37,
-      "positiveImbalanceVolume" : 47.7,
-      "negativeImbalanceVolume" : 36.6
+      "positiveImbalanceVol" : 47.7,
+      "negativeImbalanceVol" : 36.6
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T09:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T08:30",
   "to" : "2025-10-15T09:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
@@ -2817,9 +2817,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T09:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T08:30",
   "to" : "2025-10-15T09:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -2840,9 +2840,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T09:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T08:30",
   "to" : "2025-10-15T09:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD_PREDICTION",
     "date" : "2025-10-15",
@@ -2859,9 +2859,9 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T09:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T08:30",
   "to" : "2025-10-15T09:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE",
     "date" : "2025-10-15",
@@ -2882,26 +2882,26 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T09:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T08:30",
   "to" : "2025-10-15T09:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "DAM_PRICE_PREDICTION",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "08:30 - 08:45",
       "intervalIndex" : 35,
-      "predictedPriceEurMhw" : 102.5,
+      "predictedPriceEurMwh" : 102.5,
       "spikeProbability" : 0.5
     }, {
       "interval" : "08:45 - 09:00",
       "intervalIndex" : 36,
-      "predictedPriceEurMhw" : 103.8,
+      "predictedPriceEurMwh" : 103.8,
       "spikeProbability" : 0.1
     }, {
       "interval" : "09:00 - 09:15",
       "intervalIndex" : 37,
-      "predictedPriceEurMhw" : 105.1,
+      "predictedPriceEurMwh" : 105.1,
       "spikeProbability" : 0.18
     } ]
   } ]
@@ -2940,29 +2940,29 @@
   "date" : "2025-10-15",
   "interval" : "11:00 - 11:15",
   "intervalIndex" : 45,
-  "message" : "SpikeProbability 1.0001 is outside valid range [0.0,1.0]; interval skipped."
+  "message" : "SpikeProbability 1.0001 is outside the valid range [0.0, 1.0]; interval skipped."
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T11:15",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T11:00",
   "to" : "2025-10-15T11:15",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "11:00 - 11:15",
       "intervalIndex" : 45,
-      "positiveImbalanceVolume" : 0.01,
-      "negativeImbalanceVolume" : 0.25
+      "positiveImbalanceVol" : 0.01,
+      "negativeImbalanceVol" : 0.25
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T11:15",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T11:00",
   "to" : "2025-10-15T11:15",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "GRID_LOAD",
     "date" : "2025-10-15",
@@ -2975,25 +2975,25 @@
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T11:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T11:15",
   "to" : "2025-10-15T11:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_VOLUME",
     "date" : "2025-10-15",
     "data" : [ {
       "interval" : "11:15 - 11:30",
       "intervalIndex" : 46,
-      "positiveImbalanceVolume" : 21.6,
-      "negativeImbalanceVolume" : 12.8
+      "positiveImbalanceVol" : 21.6,
+      "negativeImbalanceVol" : 12.8
     } ]
   } ]
 }, {
   "command" : "get",
   "timestamp" : "2025-10-15T11:30",
+  "status" : "SUCCESS",
   "from" : "2025-10-15T11:15",
   "to" : "2025-10-15T11:30",
-  "status" : "SUCCESS",
   "data" : [ {
     "id" : "IMBALANCE_PRICE",
     "date" : "2025-10-15",
