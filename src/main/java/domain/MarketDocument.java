@@ -5,6 +5,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * I implemented this class to describe a Document of a certain day ...
+ * with some helper method as well : addOrUpdatePoint, Get/Set/Remove points
+ */
 public final class MarketDocument {
     private static final int MAX_INTERVAL_INDEX = 96;
 

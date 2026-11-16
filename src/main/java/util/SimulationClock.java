@@ -32,12 +32,6 @@ public final class SimulationClock {
 
     public void timeSimulation(final LocalDateTime targetTime,
                                final MarketRepository repository) {
-        if (this.currentTime == null) {
-            this.currentTime = targetTime;
-            return;
-        }
-        while (this.currentTime.isBefore(targetTime)) {
-            this.currentTime = this.currentTime.plusMinutes(1);
-        }
+      this.currentTime = targetTime;
     }
 }

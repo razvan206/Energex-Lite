@@ -13,6 +13,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * This class implements the storage for every type of Doc ...
+ *  with getters for Points, getLatests for GetCommand or PointsInRange ...
+ *  for intervals that come with get query
+ */
 public final class MemoryRepository implements MarketRepository {
     private static final int MINUTES_PER_INTERVAL = 15;
     private Map<DataType, Map<String, MarketDocument>> storage;

@@ -5,6 +5,10 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.time.format.ResolverStyle;
 
+/**
+ * This class acts as a helper method that converts some metrics into another
+ * ex : interval to index or vice versa, as well as an validationDate method
+ */
 public final class TimeConversionUtils {
     private static final int MINUTES_PER_QUARTER = 15;
     private static final int QUARTERS_PER_HOUR = 4;

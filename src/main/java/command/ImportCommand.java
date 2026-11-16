@@ -17,6 +17,12 @@ public final class ImportCommand extends Command {
         super(input);
     }
 
+    /**
+     *
+     * @param memoryRepository -> used for local storage
+     * @param simulationClock -> the simulation of the time
+     * @param output -> the output array
+     */
     @Override
     public void executeCommand(final MemoryRepository memoryRepository,
                                final SimulationClock simulationClock,

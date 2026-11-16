@@ -3,6 +3,11 @@ package domain;
 import fileio.MarketDataInput;
 import util.TimeConversionUtils;
 
+/**
+ * Took the raw input from MarketDataInput and created a MarketPoint ...
+ * that have interval, intervalindex, date and methods for own validation ...
+ * and some that can automatically fill a json point
+ */
 public final class MarketPointCreate {
     public MarketPointCreate() {
     }

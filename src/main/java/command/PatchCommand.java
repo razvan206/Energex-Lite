@@ -17,6 +17,14 @@ public final class PatchCommand extends Command {
         super(input);
     }
 
+    /**
+     * This method is similar (because we use a map to store points) ...
+     * to ImportCommand except the verification ...
+     * for an active import
+     * @param memoryRepository
+     * @param simulationClock
+     * @param output
+     */
     @Override
     public void executeCommand(final MemoryRepository memoryRepository,
                                final SimulationClock simulationClock,
